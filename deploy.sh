@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE_DIR=/var/www
-APPLICATION_DIRECTORY=$BASE_DIR/merchantprotal
+APPLICATION_DIRECTORY=$BASE_DIR/merchantportal
 
 echo "Configuration"
 export NODE_ENV=master
