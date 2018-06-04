@@ -4,7 +4,7 @@ BASE_DIR=/var/www
 APPLICATION_DIRECTORY=$BASE_DIR/merchantprotal
 
 echo "Configuration"
-export NODE_ENV=production
+export NODE_ENV=master
 
 echo "Stop server : forever stopall"
 cd "$APPLICATION_DIRECTORY"
@@ -14,8 +14,8 @@ echo "Updating"
 cd "$APPLICATION_DIRECTORY"
 sudo git fetch
 sudo git reset --hard HEAD
-sudo git checkout production
-sudo git pull origin production
+sudo git checkout master
+sudo git pull origin master
 
 echo "Delete .DS_Store"
 sudo find . -name ".DS_Store" -delete
