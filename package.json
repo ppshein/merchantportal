@@ -1,0 +1,14 @@
+{
+	"name": "paybuy",
+	"version": "1.0.0",
+	"description": "PayBuy Merchant Portal",
+	"main": "index.js",
+	"repository": "https://ppshein@bitbucket.org/ppshein/merchantprotal.git",
+	"author": "pyaephyoeshein@gmail.com <pyaephyoeshein@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.15.0",
+		"express": "^4.13.4",
+		"request": "^2.71.0"
+	}
+}

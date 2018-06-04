@@ -1,0 +1,23 @@
+{
+  "name": "payby",
+  "authors": [
+    "pyaephyoeshein@gmail.com <pyaephyoeshein@gmail.com>"
+  ],
+  "description": "PayBy Merchant Portal",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-sanitize": "1.4.8",
+    "angular-route": "1.4.8",
+    "bootstrap": "3"
+  }
+}

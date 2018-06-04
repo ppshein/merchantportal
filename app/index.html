@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WaveMoney - PayBuy backend</title>
+		<meta charset="utf-8">
+		<meta name="generator" content="Pwa">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#c82506">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="shortcut icon" type="image/png" href="/images/wave_money_ico.png">
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<base href="/">
+  	</head>
+  	<body ng-app="wmApp" class="bgcolor">
+		<header class="app-bar" ng-show="isShowHeader">
+			<div class="app-bar-container">
+        		<div class="logo"><a ng-href="/#/list?status=1&page=1"><img src="/images/wave_money_logo_small.png" border="0" alt=""></a></div>
+      		</div>
+    	</header>
+    	<div ng-view=""></div>
+    	<div class="desktop" ng-show="isShowHeader">
+      		<footer class="footer-container">
+        		<div class="copyright-container">
+        			© Copyright 2018 WaveMoney.com.mm. All Rights Reserved.
+        		</div>
+      		</footer>
+    	</div>
+		<script src="/bower_components/angular/angular.min.js"></script>
+		<script src="/bower_components/angular-route/angular-route.min.js"></script>
+		<script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+		<script src="/scripts/app.js"></script>
+		<script src="/scripts/controllers/welcome.controller.js"></script>
+		<script src="/scripts/controllers/checkout.controller.js"></script>
+		<script src="/scripts/controllers/callback.controller.js"></script>
+		<script src="/scripts/services/apiService.js"></script>
+		<script src="/scripts/directives/ngconfirmclick.directives.js"></script>
+		<script src="/scripts/directives/numberInput.directives.js"></script>
+  	</body>
+</html>

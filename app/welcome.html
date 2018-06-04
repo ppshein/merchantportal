@@ -1,0 +1,30 @@
+<div ng-controller="welcomeCtrl">
+    <div class="card-login">
+        <div class="apply-form">
+            <img src="/images/wave_money_logo_full_header.png">
+            <hr />
+            <form name="entryForm">
+                <div class="rows">
+                    <div class="col-sm-8">
+                        <div>
+                            <span class="spanLabel">Amount</span>
+                            <div class="amountLabel" ng-if="entryFormData.quantity">{{ amount * entryFormData.quantity }}</div>
+                            <div class="amountLabel" ng-if="!entryFormData.quantity">0</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <span class="spanLabel">Quantity</span>
+                            <input type="text" numbers-only name="quantity" ng-model="entryFormData.quantity" class="quantity-input" placeholder="Enter Quantity" ng-init="entryFormData.quantity='1'" required autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col-sm-12" align="right">
+                        <button class="wm-button" confirmed-click="checkoutAction()" ng-confirm-click="Are you sure you want to checkout?">CHECKOUT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

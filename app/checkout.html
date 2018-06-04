@@ -1,0 +1,47 @@
+<div ng-controller="checkoutCtrl">
+    <div class="card-login">
+        <div class="apply-form">
+            <img src="/images/wave_money_logo_full_header.png">
+            <hr />
+            <form name="entryForm">
+                <div class="rows">
+                    <div class="col-sm-8">
+                        <div>
+                            <span class="spanLabel">Amount</span>
+                            <div class="valueLabel">{{ amount }}</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div>
+                            <span class="spanLabel">Quantity</span>
+                            <div class="valueLabel">{{ quantity }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col-sm-12">
+                        <input type="text" numbers-only name="msisdn" ng-model="entryFormData.msisdn" class="quantity-input" placeholder="Enter MSISDN" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col-sm-12">
+                        <input type="text" name="request" ng-model="entryFormData.request" class="quantity-input" placeholder="Enter PAYMENT ID" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="col-sm-12" align="right">
+                        <button class="wm-button" confirmed-click="callbackAction()" ng-confirm-click="Are you sure you want to make payment?">MAKE PAYMENT</button>
+                    </div>
+                </div>
+                <div class="rows" align="center">
+                    <hr />
+                </div>
+                <div class="rows" align="center">
+                    <br />
+                    <hr />
+                    {{ merchantResponse }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
