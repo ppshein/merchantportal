@@ -6,6 +6,9 @@ APPLICATION_DIRECTORY=$BASE_DIR/merchantportal
 echo "Configuration"
 export NODE_ENV=master
 
+echo "install all dependencies"
+sudo npm install
+
 echo "Stop server : pm2 stop"
 cd "$APPLICATION_DIRECTORY"
 sudo pm2 stop
