@@ -6,9 +6,9 @@ APPLICATION_DIRECTORY=$BASE_DIR/merchantportal
 echo "Configuration"
 export NODE_ENV=master
 
-echo "Stop server : forever stopall"
+echo "Stop server : pm2 stop"
 cd "$APPLICATION_DIRECTORY"
-sudo forever stopall
+sudo pm2 stop
 
 echo "Updating"
 cd "$APPLICATION_DIRECTORY"
@@ -20,6 +20,6 @@ sudo git pull origin master
 echo "Delete .DS_Store"
 sudo find . -name ".DS_Store" -delete
 
-echo "start server : forever start $APPLICATION_DIRECTORY/app.js"
+echo "start server : pm2 start $APPLICATION_DIRECTORY/app.js"
 cd "$APPLICATION_DIRECTORY"
-sudo forever start $APPLICATION_DIRECTORY/app.js
+sudo pm2 start $APPLICATION_DIRECTORY/app.js
