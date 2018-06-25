@@ -28,7 +28,7 @@ app.post('/callback', function (req, res) {
 	res.send(JSON.stringify(req));
 })
 
-app.use(express.static(__dirname + '/appg'));
+app.use(express.static(__dirname + '/app'));
 // Here's the new code:
 app.use('/*', function(req, res){
 	res.sendFile(__dirname + '/app/index.html');
