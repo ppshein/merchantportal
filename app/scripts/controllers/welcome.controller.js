@@ -5,7 +5,7 @@
     wmApp.controller('welcomeCtrl', WelcomeCtrl);
     WelcomeCtrl.$inject = ['$scope', '$rootScope', '$window', '$location'];
     function WelcomeCtrl($scope, $rootScope, $window, $location) {
-        $scope.amount = 10;
+        $scope.amount = 1;
         $scope.entryFormData = {};
 
         $scope.checkoutAction = () => {
